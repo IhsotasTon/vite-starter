@@ -1,0 +1,21 @@
+{
+  "canisters": {
+    "yumi_assets_develop": {
+      "type": "assets",
+      "source": ["dist", "resources"],
+      "frontend": {
+        "entrypoint": "index.html"
+      }
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "dfx": "0.14.1",
+  "networks": {},
+  "output_env_file": ".env",
+  "version": 1
+}
