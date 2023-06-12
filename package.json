@@ -14,11 +14,6 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn lint"
-    }
-  },
   "devDependencies": {
     "@tanstack/eslint-plugin-query": "^4.29.9",
     "@tanstack/react-query": "^4.29.12",
