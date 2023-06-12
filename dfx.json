@@ -1,6 +1,6 @@
 {
   "canisters": {
-    "yumi_assets_develop": {
+    "yumi_frontend": {
       "type": "assets",
       "source": ["dist", "resources"],
       "frontend": {
@@ -16,6 +16,6 @@
   },
   "dfx": "0.14.1",
   "networks": {},
-  "output_env_file": ".env",
+  "output_env_file": ".env.development",
   "version": 1
 }
