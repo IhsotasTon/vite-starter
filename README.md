@@ -16,7 +16,7 @@ or Run command
 npx degit TheSwordBreaker/vite-reactts-eslint-prettier project-name
 ```
 
-## Start
+## Star
 
 After the successfull installation of the packages: `yarn dev`
 
