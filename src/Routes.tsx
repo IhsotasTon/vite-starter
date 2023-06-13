@@ -4,10 +4,10 @@ import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 import { shallow } from 'zustand/shallow';
 
-import logo from './logo.svg';
+import { cn } from './lib/cn';
 import { BearPopulation, useBearStore } from './store';
 
-function App() {
+function Routes() {
   const [count, setCount] = useState(0);
   const { isLoading, error, data, isFetching } = useQuery({
     queryKey: ['repoData'],
@@ -29,8 +29,8 @@ function App() {
   return (
     <div>
       <div onClick={increasePopulation}>increase</div>
-      <h1>{data.name
-      }</h1>
+      <h1>{data.name}</h1>
+      <div className={cn([])}></div>
       <p>{data.description}</p>
       <strong>👀 {data.subscribers_count}</strong>{' '}
       <strong>✨ {data.stargazers_count}</strong> <strong>🍴 {data.forks_count}</strong>
@@ -39,4 +39,4 @@ function App() {
   );
 }
 
-export default App;
+export default Routes;

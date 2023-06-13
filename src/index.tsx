@@ -10,14 +10,14 @@ import {
 } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 
-import App from './App';
+import Routes from './Routes';
 import './index.css';
 
 const queryClient = new QueryClient();
 ReactDOM.render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
-      <App></App>
+      <Routes></Routes>
       <ReactQueryDevtools initialIsOpen={import.meta.env.DEV} />
     </QueryClientProvider>
   </React.StrictMode>,
